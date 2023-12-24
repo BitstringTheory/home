@@ -1,0 +1,127 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    /* ... other heading styles ... */
+}
+
+
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+#gallery {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery div {
+    margin: 10px;
+    text-align: center;
+}
+
+#gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd; /* Optional: adds a border around each image */
+    border-radius: 4px; /* Optional: rounds the corners of the images */
+}
+
+#gallery p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: Green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#homeButton {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    background-color: Blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#homeButton:hover {
+    background-color: #000;
+}
+
+
+
+.folders, .description {
+    flex: 1;
+    padding: 20px;
+}
+
+.folders {
+    border-right: 2px solid #ddd; /* Optional: adds a line between the columns */
+}
+
+.description {
+    padding-left: 40px; /* Optional: adds more space between the columns */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ... existing styles ... */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    border-top: 1px solid #ddd; /* Optional: adds a line at the top of the footer */
+}
+
+.footer-left a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    font-weight: bold;
+}
