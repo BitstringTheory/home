@@ -1,0 +1,20 @@
+{
+  "name": "Bitcoin Strings",
+  "desc": "Algorithmic Atomicals Art",
+  "image": "atom:btc:dat:1fbed11cbf8d8b812c6b43b407454a0e1c65c12edd622b143d432c4374554526i0/logo.svg",
+  "legal": {
+    "terms": "Distribute, remix, adapt, and build for noncommercial purposes only.",
+    "license": "CC BY-NC-SA"
+  },
+  "links": {
+    "x": {
+      "v": "https://x.com/bitcoin_strings"
+    },
+    "website": {
+      "v": "https://bitcoinstrings.github.io/home/"
+    },
+    "discord": {
+      "v": "https://discord.gg/Rxdkxz92ZY"
+    }
+  }
+}
