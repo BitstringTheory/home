@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return label;
     }
 
-    function createDownloadButton(imageSrc) {
+    function createDownloadButton(jsonSrc) {
         const button = document.createElement('button');
-        button.textContent = 'Download';
-        button.onclick = () => downloadImage(imageSrc);
+        button.textContent = 'Download JSON';
+        button.onclick = () => downloadJSON(jsonSrc);
         button.style.display = 'block';
         button.style.margin = '5px auto';
         return button;
@@ -39,10 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.width = '150px';
             img.style.height = '150px';
 
+            const jsonName = `${folder}json/item-${image.toString().padStart(5, '0')}.json`;
+
             const imageContainer = document.createElement('div');
             imageContainer.appendChild(createImageNumberLabel(image));
             imageContainer.appendChild(img);
-            imageContainer.appendChild(createDownloadButton(imageName));
+            imageContainer.appendChild(createDownloadButton(jsonName));
             gallery.appendChild(imageContainer);
         }
 
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             loadMoreButton.style.display = 'none';
         }
     }
+
 
     // Initial load
     loadImages();
@@ -73,3 +76,13 @@ function downloadImage(imageSrc) {
     link.click();
     document.body.removeChild(link);
 }
+
+function downloadJSON(jsonSrc) {
+    const link = document.createElement('a');
+    link.href = jsonSrc;
+    link.download = jsonSrc.split('/').pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
